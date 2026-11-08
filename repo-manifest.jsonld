@@ -8,7 +8,8 @@
     {
       "@id": "https://repolex.ai/r/canonical/glauth-k8s-operator/commit/c001d5fd0538b64caabb69a1efbf4bb8e5db36a0",
       "git:hexsha": "c001d5fd0538b64caabb69a1efbf4bb8e5db36a0",
-      "repolex:parseStatus": "ast_complete"
+      "repolex:parseStatus": "parsed",
+      "repolex:parsedAt": "2026-11-08T15:35:52.901705+00:00"
     },
     {
       "@id": "https://repolex.ai/r/canonical/glauth-k8s-operator/commit/d799515e9263b7d889885fd2a06179b085ffc427",
