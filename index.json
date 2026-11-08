@@ -1,0 +1,11 @@
+{
+  "org": "canonical",
+  "repo": "glauth-k8s-operator",
+  "versions": [
+    {
+      "commit": "c001d5fd0538b64caabb69a1efbf4bb8e5db36a0",
+      "tag": "",
+      "parsed_at": "2026-11-08T15:35:52.902906+00:00"
+    }
+  ]
+}

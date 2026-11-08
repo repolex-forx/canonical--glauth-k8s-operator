@@ -1,1 +1,147 @@
-Initializing
+# Repolex Knowledge Graph of canonical/glauth-k8s-operator
+
+RDF knowledge graph data for [canonical/glauth-k8s-operator](https://github.com/canonical/glauth-k8s-operator), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download canonical/glauth-k8s-operator
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── c001d5fd0538b64caabb69a1efbf4bb8e5db36a0
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── c001d5fd0538b64caabb69a1efbf4bb8e5db36a0
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 02639fe7eb520a0f8d83bdd7e81c2c6da9ec92ec.nq.gz
+│   ├── 11969fb75bbae7854e3b1e3a5d9d2f170f69e540.nq.gz
+│   ├── 1243caa07ec68662a994c352166bc3a33c08b96c.nq.gz
+│   ├── 13ec6ce68ff3b2595f1bff8d2eac5ad5b6775fa0.nq.gz
+│   ├── 1669146457e66ca158d4bc6ae9fcb6da02d1782f.nq.gz
+│   ├── 166bb70f891efe5f46673da9763dc00f1866d8bd.nq.gz
+│   ├── 17888bd4aca7aab3224f6c1291a821f512905343.nq.gz
+│   ├── 1ba1b0c1ec3061690a307f6e670da38c1ebd06d9.nq.gz
+│   ├── 1c2093c82398383e1e93e00ff8d381e138658c08.nq.gz
+│   ├── 1c4e593c549eee854b53c6529f60c041596a4906.nq.gz
+│   ├── 1fb311c3cacdd963436d82295d70a0cb60454b91.nq.gz
+│   ├── 2014ee786a497d5d70dc947a52a5f601f9726c3e.nq.gz
+│   ├── 26c3bfaa8ce1ec716e1b9afc8b7cab0484d0c88b.nq.gz
+│   ├── 2b5bcff9e842953ff98a0733b4f6acfcde5d7f09.nq.gz
+│   ├── 3332bc6767d2ca14a6fb60c8cde6ef13ebf2d72f.nq.gz
+│   ├── 340001cc2fcbbfffb91756723e9b7d33ebae970c.nq.gz
+│   ├── 342f782c9dba6a4412f21901be216a17a79ff261.nq.gz
+│   ├── 361e20773b201dff1cded3ebb993457948c85f87.nq.gz
+│   ├── 4347a43e3ea19889ee53bc6dc15651fe02aff66a.nq.gz
+│   ├── 46e9a6a7bbd3ca2f22f40d8f32f7300fef035232.nq.gz
+│   ├── 4fa549f230343bc90dcdbf5282ba1f45f20140b4.nq.gz
+│   ├── 516ffd234726f7e1eadad35c4882c60e8dc498e4.nq.gz
+│   ├── 53089a008cb8eb31ebc4979346f5b9406ee376fb.nq.gz
+│   ├── 5b8558cc899028e5ea26586ab58997af6d735ec2.nq.gz
+│   ├── 5d7aafe6ffe6be4860181f1f00218be7e192c79a.nq.gz
+│   ├── 61470520c1560e63fe52b603711dfccfeb4aa5bb.nq.gz
+│   ├── 636e095e84ab6a34ffee6ec5121348e0e83112d2.nq.gz
+│   ├── 6491267f9618b02038c83646022add4c018f7f20.nq.gz
+│   ├── 64c80acbe560611d5ddb4a642132c2ebde00c66a.nq.gz
+│   ├── 693345aef24c64d204c276fc8b1eb34127f979b0.nq.gz
+│   ├── 6ccd559eabeae93e4d23215fa450130fa9b37ace.nq.gz
+│   ├── 70f9a50b5d9fcfa48981e1536c16f735728ae330.nq.gz
+│   ├── 72e332b96851bc49e0248eccd921975f3dbc291b.nq.gz
+│   ├── 7c0a5b3705e325583424d7197e970be8f57af453.nq.gz
+│   ├── 897be64d31c94aacafa2cdab30510a744d2a25e1.nq.gz
+│   ├── 8a6a8af500ad517d6c1008840e310bd4e6f98e98.nq.gz
+│   ├── 90e221323b651cf120efe640887631c0913794fd.nq.gz
+│   ├── 91f453ab0825648bcbc1f878749af4456c43a34e.nq.gz
+│   ├── 93664de80b0154931ccd34fb182cf5f50d7376d7.nq.gz
+│   ├── 94d6e26cd9a783813e61f36248695e494a978cf4.nq.gz
+│   ├── 98dfa883810763249dbf10ed55b4d381c2564a05.nq.gz
+│   ├── 9aba06996f682d32b68d0047b5fb9918085121b9.nq.gz
+│   ├── 9fea23b508fe2805247ee20b1bf0a65ea05e52ff.nq.gz
+│   ├── a3fb91091c5af8099bc9e5e03868241527b8d16c.nq.gz
+│   ├── a79e5d4343e09bc07819c1a444ef89d509067388.nq.gz
+│   ├── ab3e4d60c8a05e1628f539ec751d8979ae09f307.nq.gz
+│   ├── acf5b56289af3cdf7242c1aac00e7f8c9b42dbc3.nq.gz
+│   ├── b22d493a8bbe39ad31ca4d2414df19f26382cbb5.nq.gz
+│   ├── b4d985bba498bf6429572a40162e1a1d089e2980.nq.gz
+│   ├── be88c6b2356540f8d856dca77efd93f28c11014e.nq.gz
+│   ├── bf3ba028ff2f78fe161b61bfd48c276c6ef60d22.nq.gz
+│   ├── c7cedef565a7c06e0cab82b7421eabfe1ed659ff.nq.gz
+│   ├── d45673d0ea5778c3ecccdf5bb0280992ccbc2ba2.nq.gz
+│   ├── d5c2aa1692cb82028dac4c84b5eb6c515894d785.nq.gz
+│   ├── dc4d84559dd2db7206f81a77f8381b9f75609e73.nq.gz
+│   ├── dd175b925b3ca441cae8c3877daeceda06f27029.nq.gz
+│   ├── dfb530b432434b9d5f037acc477d3a05c7782bb0.nq.gz
+│   ├── dfc10fdeaab6810d65af462768c610a396a28f7e.nq.gz
+│   ├── e2a7947c3ecdccfe8750114d452f19ad4701569d.nq.gz
+│   ├── e307b4295b0a461c045c2346b22eaf2dde5d9432.nq.gz
+│   ├── e5ed88a478dbdc14e82e0bec85c0dc51cc900640.nq.gz
+│   ├── e639a8f03d1a433ab19f486d5818c47420998a50.nq.gz
+│   ├── e8d7703098bfc1743b918a9730b12d301d8644b6.nq.gz
+│   ├── ea78bd62d5bbf0a4e4fcf5775a2eab2d6d9ae494.nq.gz
+│   ├── f31b2916fd7b28fb4d125c9f072e6ae6805b228a.nq.gz
+│   ├── f849d85841908f003664a296aac67898d46d4f18.nq.gz
+│   ├── fe7b1ba69e981d92e0aa31eb51f10703d410a268.nq.gz
+│   └── ffeec6e52ce561b3043a2d878cab6f59201e8a62.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── c001d5fd0538b64caabb69a1efbf4bb8e5db36a0.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 76 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[canonical/glauth-k8s-operator](https://github.com/canonical/glauth-k8s-operator)
+
+---
+*Parsed on 2026-11-08 by [repolex](https://repolex.ai)*
